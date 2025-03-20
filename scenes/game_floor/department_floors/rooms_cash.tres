@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DepartmentFloor" load_steps=40 format=3 uid="uid://cljdlcw5dbu7a"]
+[gd_resource type="Resource" script_class="DepartmentFloor" load_steps=42 format=3 uid="uid://cljdlcw5dbu7a"]
 
 [ext_resource type="AudioStream" uid="uid://ta7s86ku5kvp" path="res://audio/music/installer.ogg" id="1_wellv"]
 [ext_resource type="AudioStream" uid="uid://dqgiuok6f03if" path="res://audio/music/encntr_suit_winning.ogg" id="2_lxatr"]
@@ -13,11 +13,12 @@
 [ext_resource type="PackedScene" uid="uid://okwocfndw684" path="res://objects/modules/mint/base_rooms/mint_connector1.tscn" id="8_gkehy"]
 [ext_resource type="PackedScene" uid="uid://ddfk765qkh6me" path="res://objects/modules/mint/base_rooms/mint_connector2.tscn" id="9_8ktwm"]
 [ext_resource type="PackedScene" uid="uid://cyq5xvfku4ltx" path="res://objects/modules/mint/variants/mint_standard_entrance.tscn" id="10_g7ese"]
-[ext_resource type="PackedScene" uid="uid://b2ia8h86cdjo2" path="res://objects/modules/mint/variants/mint_lava_boss.tscn" id="10_y1bhy"]
 [ext_resource type="PackedScene" uid="uid://dfotlcburhyqo" path="res://objects/modules/mint/variants/mint_lava_room_standard.tscn" id="12_7i0uv"]
-[ext_resource type="PackedScene" uid="uid://bxnc8400cjdt1" path="res://objects/modules/mint/variants/mint_golden_goose_room.tscn" id="13_3f88r"]
 [ext_resource type="PackedScene" uid="uid://dw4ed1x08ulld" path="res://objects/modules/mint/variants/mint_obstacle_room_lava.tscn" id="13_cuaol"]
+[ext_resource type="PackedScene" uid="uid://b2ia8h86cdjo2" path="res://objects/modules/mint/variants/mint_lava_boss.tscn" id="13_vma8a"]
 [ext_resource type="PackedScene" uid="uid://dfqkm6eljjh2b" path="res://objects/modules/mint/variants/mint_paint_room_standard.tscn" id="14_dt6mt"]
+[ext_resource type="PackedScene" uid="uid://bxnc8400cjdt1" path="res://objects/modules/mint/variants/mint_golden_goose_room.tscn" id="14_m6w3w"]
+[ext_resource type="PackedScene" uid="uid://2qycvckewexm" path="res://objects/modules/mint/base_rooms/auditor_boss_room.tscn" id="14_vma8a"]
 [ext_resource type="PackedScene" uid="uid://d23a7o8nv0cqc" path="res://objects/modules/mint/variants/mint_skele_stompers.tscn" id="15_o3lil"]
 [ext_resource type="PackedScene" uid="uid://bweee2f872ar" path="res://objects/modules/mint/variants/mint_shop.tscn" id="15_pqypv"]
 [ext_resource type="PackedScene" uid="uid://c8h76u7dspxxc" path="res://objects/modules/mint/variants/mint_obstacle_lava_mixer.tscn" id="18_xntky"]
@@ -49,15 +50,23 @@ script = ExtResource("3_puix8")
 room = ExtResource("8_a3afv")
 rarity_weight = 1.0
 
-[sub_resource type="Resource" id="Resource_kcq8j"]
+[sub_resource type="Resource" id="Resource_m6w3w"]
 script = ExtResource("3_puix8")
-room = ExtResource("10_y1bhy")
+room = ExtResource("14_vma8a")
 rarity_weight = 1.0
+metadata/_custom_type_script = "uid://dhyadt7p1gv78"
 
-[sub_resource type="Resource" id="Resource_ehsvc"]
+[sub_resource type="Resource" id="Resource_522n2"]
 script = ExtResource("3_puix8")
-room = ExtResource("13_3f88r")
+room = ExtResource("13_vma8a")
 rarity_weight = 1.0
+metadata/_custom_type_script = "uid://dhyadt7p1gv78"
+
+[sub_resource type="Resource" id="Resource_ms83h"]
+script = ExtResource("3_puix8")
+room = ExtResource("14_m6w3w")
+rarity_weight = 1.0
+metadata/_custom_type_script = "uid://dhyadt7p1gv78"
 
 [sub_resource type="Resource" id="Resource_bs3kq"]
 script = ExtResource("3_puix8")
@@ -111,7 +120,7 @@ battle_rooms = Array[ExtResource("3_puix8")]([SubResource("Resource_6f1he"), Sub
 obstacle_rooms = Array[ExtResource("3_puix8")]([SubResource("Resource_bs3kq"), SubResource("Resource_s8bwj"), SubResource("Resource_sxmou"), SubResource("Resource_dbq1y"), SubResource("Resource_bpdqh"), SubResource("Resource_qrqdp")])
 connectors = Array[PackedScene]([ExtResource("8_gkehy"), ExtResource("9_8ktwm")])
 pre_final_rooms = Array[ExtResource("3_puix8")]([SubResource("Resource_bdt7p")])
-final_rooms = Array[ExtResource("3_puix8")]([SubResource("Resource_kcq8j"), SubResource("Resource_ehsvc")])
+final_rooms = Array[ExtResource("3_puix8")]([SubResource("Resource_m6w3w"), SubResource("Resource_522n2"), SubResource("Resource_ms83h")])
 one_time_rooms = Array[PackedScene]([])
 special_rooms = Array[ExtResource("3_puix8")]([SubResource("Resource_w1gik"), SubResource("Resource_0826d")])
 background_music = Array[AudioStream]([ExtResource("1_wellv")])

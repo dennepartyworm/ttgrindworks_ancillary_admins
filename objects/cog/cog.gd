@@ -230,10 +230,11 @@ func set_up_stats() -> void:
 	stats.accuracy = 0.75 + (level * 0.05)
 	var new_text: String = dna.cog_name + '\n'
 	new_text += 'Level ' + str(level)
-	if v2: new_text += " v2.0"
-	if dna.is_mod_cog: new_text += '\nProxy'
-	if dna.is_admin: new_text += '\nAdministrator'
 	if dna.custom_nametag_suffix: new_text += '\n%s' % dna.custom_nametag_suffix
+	elif v2: new_text += " v2.0"
+	elif dna.is_mod_cog: new_text += '\nProxy'
+	elif dna.is_admin: new_text += '\nAdministrator'
+	
 	body.nametag.text = new_text
 	body.nametag_node.update_position(new_text)
 	if not stats.hp_changed.is_connected(update_health_light):

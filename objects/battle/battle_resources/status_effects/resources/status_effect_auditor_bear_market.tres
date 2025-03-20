@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AuditorBearMarket" load_steps=3 format=3 uid="uid://bo80vm6h6niiv"]
+
+[ext_resource type="Texture2D" uid="uid://eeko3g6xolhv" path="res://ui_assets/battle/statuses/tax_collector.png" id="1_hlnm2"]
+[ext_resource type="Script" uid="uid://d3pdfoyemhfw1" path="res://objects/battle/battle_resources/status_effects/boss_effects/status_effect_auditor_bear_market.gd" id="1_i44n1"]
+
+[resource]
+script = ExtResource("1_i44n1")
+quality = 0
+rounds = -1
+icon = ExtResource("1_hlnm2")
+icon_color = Color(1, 1, 1, 1)
+icon_scale = 1.0
+mini_icon_color = Color(1, 1, 1, 1)
+mini_icon_scale = 1.0
+visible = true
+description = "x2 Gag cost while in battle. Defeat a Cog to change!"
+status_name = "Tax Collector"
+id = 26

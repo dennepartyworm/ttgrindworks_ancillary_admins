@@ -29,6 +29,7 @@ signal s_gained_money
 
 @export var gag_cap := 10
 @export var gag_discount := -1
+@export var gag_price_mult := 1
 @export var character: PlayerCharacter
 @export var quests: Array[Quest]
 @export var quest_rerolls := 3

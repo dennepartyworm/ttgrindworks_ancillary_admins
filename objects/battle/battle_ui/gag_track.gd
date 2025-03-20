@@ -70,6 +70,7 @@ func refresh():
 			if not button.pressed.is_connected(emit_gag):
 				price = i
 				price -= BattleService.ongoing_battle.battle_stats[Util.get_player()].gag_discount
+				price *= BattleService.ongoing_battle.battle_stats[Util.get_player()].gag_price_mult
 				button.mouse_entered.connect(ui_root.gag_hovered.bind(gag))
 				button.set_count(price)
 				button.pressed.connect(emit_gag.bind(gag,price))

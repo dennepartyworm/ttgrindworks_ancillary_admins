@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cvmjift76qv3i"]
+
+[ext_resource type="Script" uid="uid://ct45fpmku64vp" path="res://objects/battle/battle_resources/status_effects/boss_effects/status_effect_auditor_bull_market.gd" id="1_1mxwm"]
+[ext_resource type="Texture2D" uid="uid://cmaiqamk4cdyh" path="res://ui_assets/player_ui/pause/Volatile_Market.png" id="1_tn12o"]
+
+[resource]
+script = ExtResource("1_1mxwm")
+quality = 2
+rounds = -1
+icon = ExtResource("1_tn12o")
+icon_color = Color(1, 1, 1, 1)
+icon_scale = 1.0
+mini_icon_color = Color(1, 1, 1, 1)
+mini_icon_scale = 1.0
+visible = true
+description = "+50% damage for all participants. Defeat a cog to change!"
+status_name = "Bull Market"
+id = 0

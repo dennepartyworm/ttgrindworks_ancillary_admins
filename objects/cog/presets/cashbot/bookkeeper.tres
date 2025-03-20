@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_5168u"]
 [ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_1kdhu"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="8_kct6m"]
-[ext_resource type="Resource" uid="uid://bfsdklo5d7n2m" path="res://objects/battle/battle_resources/status_effects/resources/boss_logic_bookkeeper.tres" id="9_tgwk5"]
+[ext_resource type="Resource" uid="uid://bfsdklo5d7n2m" path="res://objects/battle/battle_resources/status_effects/resources/boss_logic_bookkeeper.tres" id="10_7c25b"]
 [ext_resource type="Resource" uid="uid://bos0wcgjeyg4w" path="res://objects/battle/battle_resources/status_effects/resources/tenure_status.tres" id="10_onfbe"]
 
 [resource]
@@ -30,7 +30,7 @@ custom_nametag_suffix = "Director"
 attacks = Array[ExtResource("1_68i6a")]([ExtResource("2_7sios"), ExtResource("3_0f0y2"), ExtResource("4_f3d4a")])
 level_low = 20
 level_high = 20
-status_effects = Array[ExtResource("7_1kdhu")]([ExtResource("8_kct6m"), ExtResource("9_tgwk5"), ExtResource("10_onfbe")])
+status_effects = Array[ExtResource("7_1kdhu")]([ExtResource("8_kct6m"), ExtResource("10_7c25b"), ExtResource("10_onfbe")])
 is_mod_cog = false
 is_admin = false
 health_mod = 4.87
